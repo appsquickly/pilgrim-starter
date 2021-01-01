@@ -1,0 +1,141 @@
+{
+  "currentConditions": {
+    "temperature": {
+      "temperatureInFahrenheit": 82
+    },
+    "humidity": "62",
+    "wind": "Wind: 13 km ESE",
+    "imageUri": "http:\/\/cdn.worldweatheronline.com\/images\/wsymbols01_png_64\/wsymbol_0002_sunny_intervals.png",
+    "summary": "Partly cloudy"
+  },
+  "forecast": [
+    {
+      "date": 631123200,
+      "low": {
+        "temperatureInFahrenheit": 71.6
+      },
+      "high": {
+        "temperatureInFahrenheit": 84.2
+      }
+    },
+    {
+      "date": 631209600,
+      "low": {
+        "temperatureInFahrenheit": 77
+      },
+      "high": {
+        "temperatureInFahrenheit": 84.2
+      }
+    },
+    {
+      "date": 631296000,
+      "low": {
+        "temperatureInFahrenheit": 77
+      },
+      "high": {
+        "temperatureInFahrenheit": 84.2
+      }
+    },
+    {
+      "date": 631382400,
+      "low": {
+        "temperatureInFahrenheit": 78.8
+      },
+      "high": {
+        "temperatureInFahrenheit": 87.8
+      }
+    },
+    {
+      "date": 631468800,
+      "low": {
+        "temperatureInFahrenheit": 73.4
+      },
+      "high": {
+        "temperatureInFahrenheit": 87.8
+      }
+    },
+    {
+      "date": 631555200,
+      "low": {
+        "temperatureInFahrenheit": 77
+      },
+      "high": {
+        "temperatureInFahrenheit": 87.8
+      }
+    },
+    {
+      "date": 631641600,
+      "low": {
+        "temperatureInFahrenheit": 78.8
+      },
+      "high": {
+        "temperatureInFahrenheit": 87.8
+      }
+    },
+    {
+      "date": 631728000,
+      "low": {
+        "temperatureInFahrenheit": 80.6
+      },
+      "high": {
+        "temperatureInFahrenheit": 86
+      }
+    },
+    {
+      "date": 631814400,
+      "low": {
+        "temperatureInFahrenheit": 75.2
+      },
+      "high": {
+        "temperatureInFahrenheit": 80.6
+      }
+    },
+    {
+      "date": 631900800,
+      "low": {
+        "temperatureInFahrenheit": 62.6
+      },
+      "high": {
+        "temperatureInFahrenheit": 77
+      }
+    },
+    {
+      "date": 631987200,
+      "low": {
+        "temperatureInFahrenheit": 75.2
+      },
+      "high": {
+        "temperatureInFahrenheit": 82.4
+      }
+    },
+    {
+      "date": 632073600,
+      "low": {
+        "temperatureInFahrenheit": 78.8
+      },
+      "high": {
+        "temperatureInFahrenheit": 86
+      }
+    },
+    {
+      "date": 632160000,
+      "low": {
+        "temperatureInFahrenheit": 78.8
+      },
+      "high": {
+        "temperatureInFahrenheit": 86
+      }
+    },
+    {
+      "date": 632246400,
+      "low": {
+        "temperatureInFahrenheit": 78.8
+      },
+      "high": {
+        "temperatureInFahrenheit": 89.6
+      }
+    }
+  ],
+  "city": "Manila, Philippines",
+  "date": 631171496.90219903
+}

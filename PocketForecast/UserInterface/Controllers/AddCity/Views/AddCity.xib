@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCityViewController" customModule="PocketForecast" customModuleProvider="target">
+            <connections>
+                <outlet property="nameOfCityToAdd" destination="24" id="27"/>
+                <outlet property="spinner" destination="25" id="29"/>
+                <outlet property="validationMessage" destination="22" id="30"/>
+                <outlet property="view" destination="1" id="6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Validating city. . ." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                    <rect key="frame" x="6" y="180" width="402" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.52549019610000003" green="0.60784313729999995" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the name of a city" textAlignment="center" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="24">
+                    <rect key="frame" x="6" y="109" width="402" height="34"/>
+                    <color key="textColor" red="0.52549019610000003" green="0.60784313729999995" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="28"/>
+                    </connections>
+                </textField>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                    <rect key="frame" x="197" y="228" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="22" secondAttribute="trailing" constant="6" id="1uj-5u-dVY"/>
+                <constraint firstItem="24" firstAttribute="top" secondItem="1" secondAttribute="top" constant="109" id="4XU-bX-yZx"/>
+                <constraint firstItem="22" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="6" id="BS6-ud-PJI"/>
+                <constraint firstItem="25" firstAttribute="top" secondItem="22" secondAttribute="bottom" constant="27" id="T5N-Lz-3Nn"/>
+                <constraint firstItem="22" firstAttribute="top" secondItem="24" secondAttribute="bottom" constant="37" id="cSV-i9-q4s"/>
+                <constraint firstAttribute="trailing" secondItem="24" secondAttribute="trailing" constant="6" id="cos-tf-4Co"/>
+                <constraint firstItem="25" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="sKZ-Ff-QDx"/>
+                <constraint firstItem="24" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="6" id="uxa-6S-39B"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="140.57971014492756" y="67.633928571428569"/>
+        </view>
+    </objects>
+</document>

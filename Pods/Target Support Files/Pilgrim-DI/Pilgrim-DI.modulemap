@@ -1,0 +1,6 @@
+framework module PilgrimDI {
+  umbrella header "Pilgrim-DI-umbrella.h"
+
+  export *
+  module * { export * }
+}

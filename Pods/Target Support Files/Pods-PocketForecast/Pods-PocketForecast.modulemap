@@ -1,0 +1,6 @@
+framework module Pods_PocketForecast {
+  umbrella header "Pods-PocketForecast-umbrella.h"
+
+  export *
+  module * { export * }
+}

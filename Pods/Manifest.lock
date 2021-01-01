@@ -1,0 +1,29 @@
+PODS:
+  - ICLoader (2.0.2):
+    - NanoFrame
+  - NanoFrame (1.0.4)
+  - Pilgrim-DI (0.0.6)
+  - Promises (2.0.4)
+
+DEPENDENCIES:
+  - ICLoader (= 2.0.2)
+  - NanoFrame (= 1.0.4)
+  - Pilgrim-DI (= 0.0.6)
+  - Promises
+
+SPEC REPOS:
+  trunk:
+    - ICLoader
+    - NanoFrame
+    - Pilgrim-DI
+    - Promises
+
+SPEC CHECKSUMS:
+  ICLoader: f6271d1776345319079086fb77ab5a54b5d9e54d
+  NanoFrame: 7635a87e87edd56e29c12e931546997fb7d92e0c
+  Pilgrim-DI: b1d54888252f33a09ac2f17f76b2510e08641839
+  Promises: fcb83dc6be43294a8d30c343636ed1a45a8d2e0a
+
+PODFILE CHECKSUM: 58326e3c14206e3993ed5296118e4b2f36b6bee8
+
+COCOAPODS: 1.10.0

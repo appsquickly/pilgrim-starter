@@ -1,0 +1,6 @@
+framework module ICLoader {
+  umbrella header "ICLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}
