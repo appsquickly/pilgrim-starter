@@ -65,7 +65,7 @@ class ThemeAssembly: PilgrimAssembly {
     func stormySailing() -> Theme {
         objectGraph {
             Theme(backgroundResourceName: "stormySailing.jpg", navigationBarColor: UIColor(hex: 0xf8742c),
-                    forecastTintColor: UIColor(hex: 0x8a7558), controlTintColor: UIColor(hex: 0x0c0b10))
+                    forecastTintColor: UIColor(hex: 0x4f7783), controlTintColor: UIColor(hex: 0x0c0b10))
         }
     }
 
