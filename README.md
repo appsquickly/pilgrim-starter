@@ -1,4 +1,4 @@
-![PilgrimSplash](https://pilgrim.ph/splash.jpg)
+<a href="https://pilgrim.ph">![PilgrimSplash](https://pilgrim.ph/splash.jpg)</a>
 # Pocket Forecast - UIKit Starter App
 
 A UIKit example application built with <a href ="https://pilgrim.ph">Pilgrim</a>. 
