@@ -19,7 +19,7 @@ I'm looking into how Pilgrim/DI might fit into a pure SwiftUI application (if at
 * Get an API key from https://developer.worldweatheronline.com/ 
 * Set the [ProductionAppConfig](https://github.com/appsquickly/pilgrim-starter/blob/main/PocketForecast/Assembly/config/ProductionAppConfig.swift) with your API key.  
 * Run the App in the simulator or on your device. Look up the weather in your town, and put a jacket on, if you need 
-to (Ha!). Now, proceed to the exercises below. 
+to (Ha!).
   
 ### The App 
 ![Weather Report](https://github.com/appsquickly/pilgrim-starter/blob/main/Pilgrim%20Starter.gif)
