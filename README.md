@@ -22,8 +22,6 @@ I'm looking into how Pilgrim/DI might fit into a pure SwiftUI application (if at
 to (Ha!). Now, proceed to the exercises below. 
   
 ### The App 
-![Weather Report](http://appsquickly.github.io/typhoon/images/portfolio/PocketForecast3.gif)
-![Weather Report](http://appsquickly.github.io/typhoon/images/portfolio/pf-beach1.png)
-![Weather Report](http://appsquickly.github.io/typhoon/images/portfolio/pf-lights1.png)
+![Weather Report](https://github.com/appsquickly/pilgrim-starter/blob/main/Pilgrim%20Starter.gif)
 
 
