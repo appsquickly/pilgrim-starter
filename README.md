@@ -1,7 +1,7 @@
 <a href="https://pilgrim.ph">![PilgrimSplash](https://pilgrim.ph/splash.jpg)</a>
 # Pocket Forecast - UIKit Starter App
 
-A UIKit example application built with <a href ="https://pilgrim.ph">Pilgrim</a>. 
+A UIKit example application built with <a href = "https://github.com/appsquickly/pilgrim">Pilgrim</a>. 
 
 I'm looking into how Pilgrim/DI might fit into a pure SwiftUI application (if at all) and will provide a sample for that soon.  
 
