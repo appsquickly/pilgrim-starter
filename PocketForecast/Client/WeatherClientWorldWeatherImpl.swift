@@ -30,22 +30,18 @@ import Promise
  */
 class WeatherClientWorldWeatherImpl: WeatherClient {
 
-    var reportRepo: WeatherReportRepository
-    var serviceUrl: URL
-    var daysToRetrieve: Int
-
-    var apiKey: String {
-        willSet(newValue) {
-            assert(newValue != "$$YOUR_API_KEY_HERE$$",
-                    "Please get an API key (v2) from: http://free.worldweatheronline.com, and then edit 'Configuration.plist'")
-        }
-    }
+    private(set) var reportRepo: WeatherReportRepository
+    private(set) var serviceUrl: URL
+    private(set) var daysToRetrieve: Int
+    private(set) var apiKey: String
 
     init(reportRepo: WeatherReportRepository, serviceUrl: URL, daysToRetrieve: Int, apiKey: String) {
         self.reportRepo = reportRepo
         self.serviceUrl = serviceUrl
         self.daysToRetrieve = daysToRetrieve
         self.apiKey = apiKey
+        assert(self.apiKey != "$$YOUR_API_KEY_HERE$$",
+                "Please get an API key (v2) from: http://free.worldweatheronline.com, and then edit 'Configuration.plist'")
     }
 
     func loadWeatherReportFor(city: String) -> Promise<PocketForecast> {

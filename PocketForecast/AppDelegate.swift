@@ -17,8 +17,8 @@ import ICLoader
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    @Assembled var cityDao: CityRepository!
-    @Assembled var rootViewController: RootViewController!
+    @Assembled var cityRepo: CityRepository
+    @Assembled var rootViewController: RootViewController
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window!.rootViewController = rootViewController
         window!.makeKeyAndVisible()
 
-        let selectedCity: String! = cityDao.loadSelectedCity()
+        let selectedCity: String! = cityRepo.loadSelectedCity()
         if selectedCity == nil {
             rootViewController.showCitiesListController()
         }
