@@ -59,7 +59,7 @@ class CoreComponents: PilgrimAssembly {
      */
     func cityRepository() -> CityRepository {
         objectGraph {
-            CityDaoUserDefaultsImpl(defaults: UserDefaults.standard)
+            CityRepositoryUserDefaultsImpl(defaults: UserDefaults.standard)
         }
     }
 }

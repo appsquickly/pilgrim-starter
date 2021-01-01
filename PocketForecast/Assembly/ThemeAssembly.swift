@@ -46,23 +46,31 @@ class ThemeAssembly: PilgrimAssembly {
     */
     func themeFactory() -> ThemeFactory {
         shared(ThemeFactory(themes: [
-            cloudsOverTheCityTheme(),
-            lightsInTheRainTheme(),
-            beachTheme(),
-            sunsetTheme()
+            cloudsOverTheCity(),
+            stormySailing(),
+            lightsInTheRain(),
+            beach(),
+            sunset()
         ]))
     }
 
 
-    func cloudsOverTheCityTheme() -> Theme {
+    func cloudsOverTheCity() -> Theme {
         objectGraph {
             Theme(backgroundResourceName: "bg3.png", navigationBarColor: UIColor(hex: 0x641d23),
                     forecastTintColor: UIColor(hex: 0x641d23), controlTintColor: UIColor(hex: 0x7f9588))
         }
     }
 
+    func stormySailing() -> Theme {
+        objectGraph {
+            Theme(backgroundResourceName: "stormySailing.jpg", navigationBarColor: UIColor(hex: 0xf8742c),
+                    forecastTintColor: UIColor(hex: 0x8a7558), controlTintColor: UIColor(hex: 0x0c0b10))
+        }
+    }
 
-    func lightsInTheRainTheme() -> Theme {
+
+    func lightsInTheRain() -> Theme {
         objectGraph {
             Theme(backgroundResourceName: "bg4.png", navigationBarColor: UIColor(hex: 0xeaa53d),
                     forecastTintColor: UIColor(hex: 0x722d49), controlTintColor: UIColor(hex: 0x722d49))
@@ -70,14 +78,14 @@ class ThemeAssembly: PilgrimAssembly {
     }
 
 
-    func beachTheme() -> Theme {
+    func beach() -> Theme {
         objectGraph {
             Theme(backgroundResourceName: "bg5.png", navigationBarColor: UIColor(hex: 0x37b1da),
                     forecastTintColor: UIColor(hex: 0x37b1da), controlTintColor: UIColor(hex: 0x0043a6))
         }
     }
 
-    func sunsetTheme() -> Theme {
+    func sunset() -> Theme {
         objectGraph {
             Theme(backgroundResourceName: "sunset.png", navigationBarColor: UIColor(hex: 0x0a1d3b),
                     forecastTintColor: UIColor(hex: 0x0a1d3b), controlTintColor: UIColor(hex: 0x606970))
