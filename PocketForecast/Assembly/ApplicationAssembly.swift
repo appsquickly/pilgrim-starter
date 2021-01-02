@@ -47,6 +47,12 @@ class ApplicationAssembly: PilgrimAssembly {
     // MARK: - Main Assembly
     //-------------------------------------------------------------------------------------------
 
+    func window() -> UIWindow {
+        shared(UIWindow(frame: UIScreen.main.bounds)) { [self] (window: UIWindow) in
+            window.rootViewController = rootViewController()
+        }
+    }
+
     func rootViewController() -> RootViewController {
         shared(RootViewController(mainContentViewController: weatherReportController(), assembly: self))
     }

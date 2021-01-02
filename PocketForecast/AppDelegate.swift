@@ -16,9 +16,11 @@ import ICLoader
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    @Assembled var assembly: ApplicationAssembly
     @Assembled var cityRepo: CityRepository
     @Assembled var rootViewController: RootViewController
+
+    var window: UIWindow?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
@@ -31,9 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSAttributedString.Key.foregroundColor: UIColor.white
         ]
 
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window!.rootViewController = rootViewController
-        window!.makeKeyAndVisible()
+        window = assembly.window()
+        window?.makeKeyAndVisible()
 
         let selectedCity: String! = cityRepo.loadSelectedCity()
         if selectedCity == nil {
