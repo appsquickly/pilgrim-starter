@@ -27,7 +27,11 @@ import PilgrimDI
 class CoreComponents: PilgrimAssembly {
 
     var config: AppConfig {
-        ProductionAppConfig()
+        #if STAGING
+        return StagingAppConfig()
+        #else
+        return ProductionAppConfig()
+        #endif
     }
 
     override func makeBindings() {

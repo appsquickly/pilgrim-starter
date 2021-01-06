@@ -41,7 +41,7 @@ class WeatherClientWorldWeatherImpl: WeatherClient {
         self.daysToRetrieve = daysToRetrieve
         self.apiKey = apiKey
         assert(self.apiKey != "$$YOUR_API_KEY_HERE$$",
-                "Please get an API key (v2) from: http://free.worldweatheronline.com, and then edit 'Configuration.plist'")
+                "Please get an API key (v2) from: http://free.worldweatheronline.com, and then edit ProductionAppConfig or StagingAppConfig.")
     }
 
     func loadWeatherReportFor(city: String) -> Promise<PocketForecast> {

@@ -186,6 +186,12 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Pilgrim-DI/PilgrimDI.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Promises/Promise.framework"
 fi
+if [[ "$CONFIGURATION" == "Staging" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/ICLoader/ICLoader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NanoFrame/NanoFrame.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Pilgrim-DI/PilgrimDI.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Promises/Promise.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi
