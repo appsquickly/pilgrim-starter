@@ -24,9 +24,31 @@
 
 import Foundation
 
-public class AssemblyHolder {
+public class AssemblyHolder<T : PilgrimAssembly> {
+
+    public static var defaultAssemblyType: PilgrimAssembly.Type {
+        get {
+            AssemblyHolderInternal.defaultAssemblyType
+        }
+        set {
+            AssemblyHolderInternal.defaultAssemblyType = newValue
+        }
+
+    }
+
+    public static var instances: Dictionary<String, PilgrimAssembly> {
+        AssemblyHolderInternal.instances
+    }
+
+    public static func shared(assembly: T.Type) -> T {
+        AssemblyHolderInternal.shared(assembly: assembly) as! T
+    }
+}
+
+class AssemblyHolderInternal {
 
     /**
+
      Set the default factory to be used by the Assembled property wrapper, when the application is bootstrapped.
      */
     public static var defaultAssemblyType: PilgrimAssembly.Type = PilgrimAssembly.self;
@@ -39,9 +61,10 @@ public class AssemblyHolder {
      - Returns:
      */
     public static func shared(assembly: PilgrimAssembly.Type = defaultAssemblyType) -> PilgrimAssembly {
+        objc_sync_enter(self)
+        defer { objc_sync_exit(self) }
         let key = String(describing: assembly)
-        let token = "\(key).Pilgrim.assembly"
-        DispatchQueue.once(token: token) {
+        if instances[key] == nil {
             instances[key] = (assembly).init()
         }
         return instances[key]!;

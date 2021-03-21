@@ -34,8 +34,8 @@ class ApplicationAssembly: PilgrimAssembly {
      * These are modules - assemblies collaborate to provide components to this one.  At runtime you
      * can instantiate Typhoon with any assembly tha satisfies the module interface.
      */
-    private(set) var coreComponents: CoreComponents = CoreComponents()
-    private(set) var themeAssembly: ThemeAssembly = ThemeAssembly()
+    private(set) var coreComponents = AssemblyHolder.shared(assembly: CoreComponents.self)
+    private(set) var themeAssembly = AssemblyHolder.shared(assembly: ThemeAssembly.self)
 
     override func makeBindings() {
         super.makeBindings()
